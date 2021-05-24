@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="script/main.js" defer></script>
+    <title>TD2-Flickr</title>
+</head>
+
+<body>
+    <main>
+        <article>
+            
+            <input type="text" id="champ_recherche" placeholder="Tapez votre recherche puis appuyez sur ENTREE">
+        
+            <form>
+                <input type="radio" name="nombre" id="20" value="20" class="choix" checked>
+                <label for="20">20</label>
+
+                <input type="radio" name="nombre" id="50" value="50" class="choix">
+                <label for="50">50</label>
+
+                <input type="radio" name="nombre" id="100" value="100" class="choix">
+                <label for="100">100</label>
+            </form>
+            <button id="bouton"> Rechercher</button>
+        </article>
+        <span id="lightbox">
+            <button class="croix">x
+            </button>
+        </span>
+
+        <section id="galerie">
+
+        </section>
+
+    </main>
+    <footer>
+        <p>Matthias FRANSIOLI © 2020</p>
+        <p>Powered By Flickr</p>
+    </footer>
+</body>
+
+</html>
