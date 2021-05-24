@@ -16,14 +16,18 @@ $("#champ_recherche").keydown(function (e) {
 
         //affiche dans la console le terme de la recherche
         console.log($(this).val());
-        
-        //Vider le contenu de la page (supprimer les images de l'ancienne recherche)
-        $(".galerie").empty;
+
+        //vider le contenu de la page (supprimer les images de l'ancienne recherche)
+        $(".galerie").empty();
+
+        //let element = $(".galerie *");
+       // if(element.length>0) {
+       //     $(".galerie").empty();
+       // }
 
         //Recherche la photo
         //Paramètre 1: terme de la recherche , Paramètre 2 : nbr de photos demandées
         chercherPhoto($(this).val(), $('input[name=nombre]:checked').val());
-
     }
 })
 
