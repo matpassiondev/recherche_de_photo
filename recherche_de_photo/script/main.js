@@ -16,6 +16,9 @@ $("#champ_recherche").keydown(function (e) {
 
         //affiche dans la console le terme de la recherche
         console.log($(this).val());
+        
+        //Vider le contenu de la page (supprimer les images de l'ancienne recherche)
+        $(".galerie").empty;
 
         //Recherche la photo
         //Paramètre 1: terme de la recherche , Paramètre 2 : nbr de photos demandées
